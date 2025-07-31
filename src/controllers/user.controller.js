@@ -287,7 +287,7 @@ const updateUserAvatar = asyncHandler(async (req, res) =>{
    }
 
    const user = User.findByIdAndUpdate(
-      req.useer?._id,
+      req.user?._id,
       {
          $set: {
             avatar: avatar.url
